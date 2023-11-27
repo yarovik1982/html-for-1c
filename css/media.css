@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+@media(max-width:411px){
+   .link-text,.btn-text{
+      display: none;
+   }
+}

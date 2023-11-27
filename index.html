@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+   <meta charset='UTF-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+   <link rel='stylesheet' href='./css/global.css'>
+   <link rel="stylesheet" href="./css/media.css">
+   <script src='./js/index.js' defer type="module"></script>
+   <title>Document</title>
+</head>
+
+<body class="bg-warning bg-opacity-75">
+   <div class='wrapper'>
+      <header class='header bg-secondary bg-opacity-75 py-2'>
+         <div class='text-center'>
+            <a href="#" class="link-dark link-underline-secondary">
+               <i class="bi bi-person"></i>
+               <span class="link-text">Для пользователя</span>
+            </a> |
+            <a href="#" class="link-dark link-underline-secondary">
+               <i class="bi bi-code-slash"></i>
+               <span class="link-text">Для разработчика</span>
+            </a>
+         </div>
+      </header>
+      <main class='main'>
+         <!-- Tools -->
+        <div class="tools bg-secondary bg-opacity-75">
+         <div class="container-fluid">
+            <div class="tools-content d-flex">
+               <div class="dropdown px-1">
+                  <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Подсистема 1">
+                     <i class="bi bi-file-person"></i>
+                     <span class="btn-text">Подсистема 1</span>
+                  </button>
+                  <ul class="dropdown-menu bg-warning">
+                    <li><a class="dropdown-item" href="#">Категория подсистемы 1</a></li>
+                    <li><a class="dropdown-item" href="#">Категория подсистемы 1</a></li>
+                    <li><a class="dropdown-item" href="#">Категория подсистемы 1</a></li>
+                  </ul>
+                </div>
+               <div class="dropdown px-1">
+                  <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Подсистема 2">
+                     <i class="bi bi-file-earmark"></i>
+                     <span class="btn-text">Подсистема 2</span>
+                  </button>
+                  <ul class="dropdown-menu bg-warning">
+                    <li><a class="dropdown-item" href="#">Категория подсистемы 2</a></li>
+                    <li><a class="dropdown-item" href="#">Категория подсистемы 2</a></li>
+                    <li><a class="dropdown-item" href="#">Категория подсистемы 2</a></li>
+                  </ul>
+                </div>
+            </div>
+         </div>
+        </div>
+        <!-- End Tools -->
+
+        <!-- Document -->
+        <section id="document">
+         <div class="container-fluid mt-1 p-3 bg-secondary bg-opacity-75">
+            <div class="document-content ">
+               <div class="document-header">
+                  <div class="text-center docName">
+                     docType (docName)
+                  </div>
+                  <div class="row w-100 w-md-50 mb-1">
+                     <div class="col-6">
+                        <div class="row">
+                           <div class="col-12 col-md-6">
+                              <label for="inpNum" class="w-100 d-block">Номер документа</label>
+                           </div>
+                           <div class="col-12 col-md-6">
+                              <input type="text" id="inpNum" class="inpHead border-0 rounded-2 ">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row w-100 w-md-50 mb-1">
+                     <div class="col-6">
+                        <div class="row">
+                           <div class="col-12 col-md-6">
+                              <label for="inpDate" class="w-100 d-block">Дата документа</label>
+                           </div>
+                           <div class="col-12 col-md-6">
+                              <input type="text" id="inpDate" class="inpHead border-0 rounded-2 ">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                     <button class="btn btn-info btn-sm" id="addRow">
+                        <i class="bi bi-plus-circle"></i>
+                        <span class="btn-text">Добавить</span>
+                     </button>
+                     <button class="btn btn-info btn-sm" id="save">
+                        <i class="bi bi-floppy"></i>
+                        <span class="btn-text">Сохранить</span>
+                     </button>
+                  </div>
+               </div>
+               <div class="document-body mt-1">
+                  <div class="tabular p-3 bg-info rounded-2">
+                     <div class="tabular-head">
+                        <div class="tabular-row d-flex w-100 justify-content-between">
+                           <div class="tabular-col w-25">#</div>
+                           <div class="tabular-col w-100 flex-grow-1 flex-shrink-1">Товар</div>
+                           <div class="tabular-col w-100 flex-grow-1 flex-shrink-1">ед. изм.</div>
+                           <div class="tabular-col w-100 flex-grow-1 flex-shrink-1">количество</div>
+                           <div class="tabular-col w-100 flex-grow-1 flex-shrink-1">цена</div>
+                           <div class="tabular-col w-100 flex-grow-1 flex-shrink-1">сумма</div>
+                           <div class="tabular-col w-75 flex-grow-1 flex-shrink-1">действие</div>
+                        </div>
+                     </div>
+                     <div class="tabular-body">
+
+                     </div>
+                     <div class="tabular-footer"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+        </section>
+        <!-- End Document -->
+      </main>
+      <footer class='footer bg-secondary py-2'></footer>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+<html />

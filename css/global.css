@@ -1,0 +1,90 @@
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+list-style:none;
+}
+html,body{
+width:100%;
+height:100%;
+font-family:sans-serif;
+}
+.none{
+display:none;
+}
+a{
+text-decoration:none;
+}
+.container{
+   margin: 0 auto;
+   max-width: 1470px;
+   padding: 0 15px;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+.header{
+   margin-top: -90px;
+   transition: all .3s linear;
+   -webkit-transition: all .3s linear;
+   -moz-transition: all .3s linear;
+   -ms-transition: all .3s linear;
+   -o-transition: all .3s linear;
+}
+.header.visible{
+   margin: 0;
+}
+.tools {
+   border-top: 2px solid #ffd045;
+}
+
+.main {
+   flex: 1 auto;
+}
+label{
+   white-space: nowrap;
+}
+.inpHead{
+   width: 100%;
+   min-width: 200px;
+   outline: none;
+   padding: 0 8px;
+}
+.tabular{
+   overflow-x: auto;
+}
+.tabular::-webkit-scrollbar{
+   width: 5px;
+   height: 5px;
+}
+.tabular::-webkit-scrollbar-thumb{
+   background-color: rgb(0, 0, 120);
+}
+.tabular-head>.tabular-row>.tabular-col{
+   font-weight: 600;
+}
+.tabular-col {   
+   min-width: 150px;
+   height: 30px;
+   border: 1px  solid #000;
+   text-align: center;
+}
+.tabular-col:first-child{
+   min-width: 50px;
+}
+.tabular-col:last-child{
+   min-width: 100px;
+}
+.tabular-col > input{
+   width: 100%;
+   height: 100%;
+   border: 0;
+   outline: none;
+   padding:  0 16px;
+}
+.bi-trash3{
+   cursor:pointer
+}
