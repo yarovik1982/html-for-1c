@@ -7,7 +7,7 @@
 
 
 
-@media(max-width:411px){
+@media(max-width:576px){
    .link-text,.btn-text{
       display: none;
    }
