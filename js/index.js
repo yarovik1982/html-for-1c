@@ -1,9 +1,11 @@
 // index.js
-import { dropdown, getDataFromDropdown } from "./modules/useDropdown.js";
+import { dropdownEl, dropdown, getDataFromDropdown } from "./modules/useDropdown.js";
 import { addRow, setValues} from "./modules/useDocument.js";
-import { dropdownEl } from "./modules/test.js";
 
+const app = () => {
 dropdownEl.create('.tools-content', 'div')
 dropdown()
 getDataFromDropdown(setValues)
 addRow()
+}
+app()

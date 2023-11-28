@@ -44,6 +44,12 @@ text-decoration:none;
 .main {
    flex: 1 auto;
 }
+section{
+   display: none;
+}
+section.openDocument{
+   display: block;
+}
 label{
    white-space: nowrap;
 }
